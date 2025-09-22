@@ -3,6 +3,18 @@
 def create_movie(title, genre, rating):
     pass
 
+def add_to_watched(user_data, movie):
+    pass
+
+def add_to_watchlist(user_data, movie):
+    pass
+        
+def watch_movie(user_data, title):
+    pass
+
+
+
+
 # -----------------------------------------
 # ------------- WAVE 2 --------------------
 # -----------------------------------------
