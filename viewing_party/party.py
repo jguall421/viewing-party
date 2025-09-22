@@ -16,31 +16,9 @@ def create_movie(title, genre, rating):
     return movie_dict
 
 
-def add_to_watched(user_data, movie):
-
-    movie = {
-        "title": "Title A",
-        "genre": "Horror",
-        "rating": 3.5
-        }
-    
-    user_data = {}       
-    user_data["watched"] = movie
-    print(user_data)
-    
+def add_to_watched(user_data, movie):         
+    user_data["watched"] = [movie]
     return user_data
-
-
-user_data = {
-        "watched": []
-    }
-movie = {
-        "title": "Title A",
-        "genre": "Horror",
-        "rating": 3.5
-        }
-
-add_to_watched(user_data, movie)
 
 def add_to_watchlist(user_data, movie):
     pass
