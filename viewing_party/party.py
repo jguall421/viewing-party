@@ -4,7 +4,30 @@ def create_movie(title, genre, rating):
     pass
 
 def add_to_watched(user_data, movie):
-    pass
+
+    movie = {
+        "title": "Title A",
+        "genre": "Horror",
+        "rating": 3.5
+        }
+    
+    user_data = {}       
+    user_data["watched"] = movie
+    print(user_data)
+    
+    return user_data
+
+
+user_data = {
+        "watched": []
+    }
+movie = {
+        "title": "Title A",
+        "genre": "Horror",
+        "rating": 3.5
+        }
+
+add_to_watched(user_data, movie)
 
 def add_to_watchlist(user_data, movie):
     pass
