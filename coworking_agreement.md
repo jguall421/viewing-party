@@ -34,5 +34,8 @@ One team Communication Skill would be explaining the code or logic verbal for ea
 *Other co-working agreements that were not captured in the above sections.*
 
 ## Signatures
-Mami Nishiwaki _______________
+Mami Nishiwaki 
+Date: 9.22.2025
+
+Jesica Guallpa
 Date: 9.22.2025
