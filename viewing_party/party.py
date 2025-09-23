@@ -47,8 +47,17 @@ def watch_movie(user_data, title):
 # ------------- WAVE 2 --------------------
 # -----------------------------------------
 def get_watched_avg_rating(user_data):
-    pass
+    sum = 0
+    average = 0.0
+    total = len(user_data["watched"])
 
+    for movies in user_data["watched"]:
+        for key, value in movies.items():
+            if key == "rating":
+                sum += value
+            average = sum /total
+    return average
+                        
 
 def get_most_watched_genre(user_data):
     pass
