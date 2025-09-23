@@ -16,18 +16,26 @@ def create_movie(title, genre, rating):
     return movie_dict
 
 
-def add_to_watched(user_data, movie):         
-    user_data["watched"] = [movie]
+def add_to_watched(user_data, movie):
+    watched = user_data["watched"] 
+    if watched is None:        
+        watched = [movie]
+    watched.append(movie)
+
     return user_data
 
+
 def add_to_watchlist(user_data, movie):
-    pass
+    watchlist = user_data["watchlist"]
+    if watchlist is None:
+        watchlist= [movie]
+    watchlist.append(movie)
+
+    return user_data
+
         
 def watch_movie(user_data, title):
     pass
-
-
-
 
 # -----------------------------------------
 # ------------- WAVE 2 --------------------
