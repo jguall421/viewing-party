@@ -60,7 +60,30 @@ def get_watched_avg_rating(user_data):
                         
 
 def get_most_watched_genre(user_data):
-    pass
+    # create frequency dict
+    frequency = {}
+
+    if not user_data["watched"]:
+        return None
+    
+    for movies in user_data["watched"]:
+        if not movies["genre"] in frequency:
+            frequency[movies["genre"]] = 1
+        else:
+            frequency[movies["genre"]] += 1
+
+    # compage value and return genre
+    most_genre = None
+    most_value = 0
+
+    for genre, value in frequency.items():
+        if value > most_value:
+            most_genre = genre
+            most_value = value
+
+    return most_genre
+
+
 # -----------------------------------------
 # ------------- WAVE 3 --------------------
 # -----------------------------------------
